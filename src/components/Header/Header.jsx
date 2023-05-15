@@ -1,16 +1,22 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './Header.css';
-import { GrCart} from "react-icons/gr";
+import { GrCart} from "react-icons/gr"
+import { Link } from 'react-router-dom';
+import { CartContext } from '../../contexts/CartContext';
+
+
+
 
 
 function Header() {
+  const {cart} = useContext(CartContext)
   return (
     <div className='header-container'>
         <h2>Fake Store</h2>
         <div className="cart-container">
-        <GrCart className='cart'/>
+       <Link to="/checkout"> <GrCart className='cart'/> </Link>
         <div className="cart-pointer">
-          1
+          {cart.length}
         </div>
         </div>
         

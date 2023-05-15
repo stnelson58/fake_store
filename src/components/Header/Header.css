@@ -34,17 +34,44 @@
     font-size: 20px;
     position: relative;
     bottom: 28px;
-    right: 30px;
+    right: 34px;
     display: inline-block;
     height: 25px;
     width: 25px;
 
 }
 
-.cart-container{
-    margin-top: 25px;
+.contact{
+    
     margin-right: 50px;
 }
 .cart{
+    margin-top: 25px;
     font-size: 40px;
 }
+
+@media (max-width:768px){
+    header-container{
+        width: 768px;
+    }
+    .header-container h2{
+        margin-left: 10px ;
+    }
+   
+
+
+}
+
+
+@media (max-width:480px) {
+    header-container{
+        width: 480px;
+    }
+    
+    .header-container h2{
+        margin-left: 10px ;
+    }
+  
+    
+
+    }

@@ -5,6 +5,7 @@ import './ContactUs.css'
 
 function ContactUs() {
   return (
+    <div className="contact-container">
     <form>
         <h1>Contact Us</h1>
         <input type="text" placeholder='First Name'/>
@@ -15,6 +16,7 @@ function ContactUs() {
 
 
     </form>
+    </div>
   )
 }
 

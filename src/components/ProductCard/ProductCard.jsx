@@ -24,7 +24,7 @@ function ProductCard({product}) {
             <Link to={`/details/${product.id}`}><img  src={product.image}  /></Link>
             <div className='heart'>
             {
-                isCart? < BsHeartFill onClick={()=>removeProduct(product.id)} className='heart-icon'/> : < BsHeart onClick={()=>addProduct(product)}/>
+                isCart? < BsHeartFill onClick={()=>removeProduct(product.id)} className='heart-icon'/> : < BsHeart onClick={()=>addProduct(product)} className='heart-icon' />
             }
 
             </div>

@@ -1,17 +1,13 @@
 .checkout-container{
 
-    width: 863px;
-    height: 783px;
+    width: 70%;
+    min-height: 90vh; 
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    margin-left: 150px;
+    margin-left: 300px;
     margin-bottom: 120px;
-    
 }
-
-
-
 
 
 
@@ -21,9 +17,12 @@
 
 .checkout-headings{
     display: flex;
-    
-    /* align-items: center; */
+    justify-content: space-between;
+    width:100%;
+    align-items: center; 
     background-color: #ffffff;
+    border-bottom: 2px solid rgba(217, 217, 217, 0.6);
+    padding: 15px;
     /* height: 583px;
     width: 663px; */
     
@@ -45,14 +44,61 @@ p{
 }
 .cart-items{
     
-    height: 600px;
+    min-height: 50vh; 
     background-color: #ffffff;
+    
+    
 
+}
+
+.checkout-map{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(217, 217, 217, 0.6);
+    transform: rotate(-0.13deg);
+    background-color: #ffffff;
+    
+    
+}
+.checkout2{
+    display: flex;
+     width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3px;
+    background-color: #ffffff;
+     
+}
+
+.checkout-image{
+    width: 108px;
+    height: 145px;
+    margin: 15px 30px;
+    
 }
 .cart-sum{
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
+    align-items: flex-end;
+}
+
+.cart-sum h3{
+    /* text-align: right; */
+    margin-right: 80px;
+    margin-top: 40px;
+    background-color: #ffffff;
+}
+
+.euro-icon{
+    background-color: #ffffff;
+    position: relative;
+    top: 3px;
+}
+.checkout-title{
+    width: 15%;
 }
 
  h3 {
@@ -61,31 +107,21 @@ font-style: normal;
 font-weight: 600;
 font-size: 24px;
 line-height: 29px;
-
-
-
-
-
 color: #282828;
 
      
 }
 
-button{
-    width: 156px;
+.cart-sum button{
+width: 156px;
 height: 41px;
-
-
-background: #FFD814;
+background-color: #FFD814;
 border: none;
 font-family: serif;
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 17px;
-
-
-
 color: #282828;
 
 
@@ -95,4 +131,33 @@ margin: 50px;
 
 
 }
+.bin{
+    margin-right: 30px;
+    width: 32px;
+    height: 41px;
+    background-color: #ffffff;
+}
+ .checkout-map p{
+    color: #282828;
 
+ }
+
+ .modal-header{
+    background-color: #ffffff;
+    width: 692px;
+    height: 536px;
+    
+ }
+
+ .modal-header h2{
+    background-color: #ffffff;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+.modal-close-btn{
+
+    margin: 80px 250px 100px 280px;
+
+}

@@ -8,11 +8,21 @@ export default function CartContextProvider(props) {
     //create global state
     const[cart,setCart] = useState([])
 
+    useEffect(()=>{
+        const storedCart = localStorage.getItem('cartList')
+        if(storedCart){
+            setCart(JSON.parse(storedCart))
+        }
+
+    
+    },[])
+
     const addProduct = (item) => {
         console.log("Added item")
         let newCart = [...cart,item]
         setCart(newCart);
-        console.log(cart)
+        
+        localStorage.setItem('cartList',JSON.stringify(newCart))
 
     }
 
@@ -20,7 +30,8 @@ export default function CartContextProvider(props) {
         console.log("removed")
         let newCart = cart.filter((item)=>item.id !== productId)
         setCart(newCart)
-        console.log(cart)
+        
+        localStorage.setItem('cartList',JSON.stringify(newCart))
 
     }
 
