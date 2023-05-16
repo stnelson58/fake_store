@@ -2,6 +2,7 @@ import React,{useEffect,useState}from 'react';
 import './CategoryTab.css';
 import axios from 'axios';
 
+// TODO: Remove any unused components from the project
 function CategoryTab({category}) {
 
     // const [categories,setCategories] = useState([])

@@ -9,6 +9,7 @@ export default function CartContextProvider(props) {
     const[cart,setCart] = useState([])
 
     useEffect(()=>{
+        // Good use of use effect to fetch cartlist after page reload
         const storedCart = localStorage.getItem('cartList')
         if(storedCart){
             setCart(JSON.parse(storedCart))
@@ -17,6 +18,7 @@ export default function CartContextProvider(props) {
     
     },[])
 
+    // Great setup for add and remove product components
     const addProduct = (item) => {
         console.log("Added item")
         let newCart = [...cart,item]

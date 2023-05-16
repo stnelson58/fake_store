@@ -66,12 +66,17 @@ function CheckOut() {
         <div className="modal-header">
             <h2>Your Order was successful!</h2>
             <h2>Check your email for the order confirmation.Thank<br/>you for shopping with Fake Store!</h2>
+            {/* TODO: here instead of calling setIsOpen straight away call an external function that would do the following:
+            1. delete all products from cart
+            2. redirect user to homepage
+            3. close modal
+            */}
             <button className="modal-close-btn" onClick={()=>setIsOpen(false)}>Return to Main Page</button>
         </div>
         
         
       </Modal>
-
+{/* TODO: remove any unused lines */}
 
       
 

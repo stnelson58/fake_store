@@ -16,7 +16,8 @@ function HomePage() {
         axios.get(`https://fakestoreapi.com/products/categories`)
         .then(res=>{
             
-        
+        // TODO: remove this and start again as it is very complex and not needed.
+        // view how to get values from buttons using react
        const categoryMenu = (["All"]);
         for (let i = 0; i < res.data.length ; i++ ){
             
@@ -55,6 +56,7 @@ function HomePage() {
     <div className='homepage-container'>
       
       <div className="categories-container">
+        {/* TODO: create buttons here for the categories */}
     { categories.map((category,index)=><CategoryTab category={category} key={index} />
 
   )  
@@ -63,6 +65,7 @@ function HomePage() {
 }
       </div>
       <div className="products-container">
+        {/* TODO: add a state which will have the filter value. Put the filter before the map in order to filter based off of the category */}
      {
 
      products.map((product)=>{return <ProductCard product={product} key={product.id}/>})

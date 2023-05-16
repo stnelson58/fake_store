@@ -12,7 +12,7 @@ import ContactUs from './pages/ContactUs/ContactUs';
 import CartContextProvider from './contexts/CartContext'
 function App() {
   
-
+// Good setup of context, react router and the components, just remove any unused lines
   return (
     <BrowserRouter>
     <CartContextProvider>

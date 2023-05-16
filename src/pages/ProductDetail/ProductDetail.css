@@ -1,3 +1,4 @@
+/* TODO: avoid using fixed width and height here as it is not allowing your page to be fully responsive */
 .detail-container {
     display: flex;
     height: 783px;
@@ -25,7 +26,7 @@
 
 
 
-
+/* Store all colours within the root of the css */
 .detail-container h3{
 
     color: #282828;
